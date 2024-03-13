@@ -14,6 +14,21 @@
     font-size: 30px;
     font-weight: bold;
 }
+
+.abtpagecontainer{
+    /* background-color: yellow; */
+    position: relative;
+}
+
+.starImage{
+    max-width: 250px;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 60px;
+    z-index: -11;
+    opacity: .7;
+}
 .abtsubdiv1{
     
     z-index: -100;
@@ -64,29 +79,33 @@
     box-shadow: 0px 4px 10px 1px rgba(121, 166, 180, 0.63);
 }
 .abtcontent{
-    margin: 10px 0px;
-    font-size: 15px;
+    margin: 15px 0px;
+    font-size: 20px;
     color: #515151;
     line-height: 1.5;
 }
 .abtheading{
-    font-size: 28px;
-    font-weight: bold;
-    color: #0D4050;
-    margin: 3px 0px;
+    font-size: 1.2em;
+    /* font-weight: bold; */
+    color: #000;
+    margin: 10px 0px;
 }
 .wanttojoin{
-    margin: 10px 0px;
+    margin: 15px 0px;
     border: none;
-    background-color: #267D98;
-    border-radius: 6px;
-    color: white;
-    font-weight: bold;
-    padding: 20px;
+    background-color: unset;
+    border-radius: 30px;
+    border: 1px solid #9747FF;
+    color: #9747FF;
+    /* font-weight: bold; */
+    padding: 15px;
 }
 .wanttojoin:hover{
     cursor: pointer;
 }
+
+
+
 
 @media (max-width:1400px){
     .abtheader{
@@ -116,9 +135,9 @@
         width: 50px;
         height: 50px;
     }
-    .ssmdiv{
+    /* .ssmdiv{
        
-    }
+    } */
     .aboutus{
         width: 65%;
     }
@@ -141,8 +160,9 @@
     }
     .wanttojoin{
         margin: 10px 0px;
-        border: none;
+        /* border: none; */
         border-radius: 6px;
+        border-radius: 30px;
         padding:16px;
     }
        
@@ -176,9 +196,9 @@
         width: 50px;
         height: 50px;
     }
-    .ssmdiv{
+    /* .ssmdiv{
         
-    }
+    } */
     .aboutus{
         width: 75%;
     }
@@ -201,8 +221,8 @@
     }
     .wanttojoin{
         margin: 10px 0px;
-        border: none;
-        border-radius: 6px;
+        /* border: none; */
+        /* border-radius: 30px; */
         padding:16px;
     }
       
@@ -235,9 +255,9 @@
         width: 50px;
         height: 50px;
     }
-    .ssmdiv{
+    /* .ssmdiv{
      
-    }
+    } */
     .aboutus{
         width: 80%;
     }
@@ -260,8 +280,8 @@
     }
     .wanttojoin{
         margin: 10px 0px;
-        border: none;
-        border-radius: 6px;
+        /* border: none; */
+        /* border-radius: 6px; */
         padding:16px;
     }
 }
@@ -320,8 +340,8 @@
     }
     .wanttojoin{
         margin: 10px 0px;
-        border: none;
-        border-radius: 6px;
+        /* border: none; */
+        /* border-radius: 6px; */
         padding:16px;
     }
 }
@@ -382,9 +402,9 @@
     }
     .wanttojoin{
         margin: 10px 0px;
-        border: none;
-        border-radius: 6px;
-        padding:16px;
+        /* border: none; */
+        /* border-radius: 6px; */
+        padding:10px;
     }
 }
 

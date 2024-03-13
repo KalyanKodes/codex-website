@@ -1,7 +1,49 @@
 .feedback {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    place-items: center;
+    margin-bottom: 2vw;
+    box-shadow: 2px 0 2px rgba(0,0,0,.2);
+    padding-top: 50px;
 }
+
+
+.feedback img{
+    position: absolute;
+    right: 0;
+    height: auto;
+    max-width: 400px;
+    /* transform: translateX(200px); */
+}
+
+
+.con_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+
+
+.con_1 h1 {
+    font-size: clamp(4vw , 60px , 10vw);
+}
+
+.contactUs {
+    margin: 15px 0px;
+    border: none;
+    background-color: unset;
+    border-radius: 30px;
+    border: 1px solid #9747FF;
+    color: #9747FF;
+    padding: 10px 20px;
+}
+
+
 .askinG_feedback {
     text-align: center;
 }
@@ -220,6 +262,16 @@
     .querylabel {
         font-size: 1.7vw;
     }
+    .feedback img{
+        width: 300px;
+    }
+}
+
+@media (max-width:750px){
+    .feedback{
+        justify-content: start;
+        padding-left: 20px;
+    }
 }
 @media (max-width: 700px) {
     .feedback_card {
@@ -338,5 +390,12 @@
         border: none;
         border-bottom: 1px solid grey;
         outline: none;
+    }
+    .feedback img{
+        width: 150px;
+    }
+    .con_1 button{
+        font-size: 10px;
+        scale: .8;
     }
 }

@@ -10,7 +10,7 @@ import FAQ from "@/components/FAQ";
 import Memories from "@/components/memories";
 import Feedback from "@/components/Feedback";
 import Footer from "@/components/Footer";
-
+import Event_curosel from "@/components/Eventspo_carousel";
 const Home: NextPage = () => {
     return (
         <div className={styles.body}>
@@ -38,8 +38,8 @@ const Home: NextPage = () => {
             </Head>
             <NavBar />
             <Glimpse />
-            <Resources />
-            <FAQ />
+            {/* <Resources /> */}
+            {/* <FAQ /> */}
             <Memories />
             <Feedback />
             <Footer />

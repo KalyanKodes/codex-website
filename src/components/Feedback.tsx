@@ -7,6 +7,8 @@ import Image from "next/image";
 import saly38 from "../assests/Saly_38_1.png";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Link from "next/link";
+import talkImage from '../assests/Group_20.png';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Feedback = () => {
@@ -64,8 +66,8 @@ const Feedback = () => {
     };
     return (
         <div className={styles.feedback}>
-            <p className={styles.askinG_feedback}>Willing to learn and work on projects with us?</p>
-            <div className={styles.feedback_card}>
+            {/* <p className={styles.askinG_feedback}>Willing to learn and work on projects with us?</p> */}
+            {/* <div className={styles.feedback_card}>
                 <div className={styles.feedback_inputs_box}>
                     <div className={styles.feedback_input_box_header}>
                         <h1>Send us a Message</h1>
@@ -153,8 +155,9 @@ const Feedback = () => {
                         <Image src={mail} alt="mail" /> codexclub@gitam.in
                     </a>
                 </div>
-            </div>
-            <ToastContainer
+            </div> */}
+
+            {/* <ToastContainer
                 position="bottom-right"
                 autoClose={5000}
                 hideProgressBar={false}
@@ -165,7 +168,18 @@ const Feedback = () => {
                 draggable
                 pauseOnHover
                 theme="colored"
-            />
+            /> */}
+
+
+            <div className={styles.con_1}>
+                <p>Want to Collaborate?</p>
+                <h1>Let’s Talk</h1>
+                <Link href="UnderConstruction">
+                    <button className={styles.contactUs}>CONTACT US</button>
+                </Link>
+            </div>
+                <Image src={talkImage} alt="let's talk"/>
+            
             {/* <Image className={styles.saly38} src={saly38} alt="saly_38_1"/> */}
         </div>
     );

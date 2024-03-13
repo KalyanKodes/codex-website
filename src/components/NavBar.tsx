@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import styles from "../styles/NavBar.module.css";
-import logo from "../assests/logo_1.png";
+import logo from "../assests/Logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import bar from "../assests/burger.png";
+import menu from '../assests/menu.png';
 import arrow from "../assests/rightarrow.png";
 
 const NavBar = () => {
@@ -18,7 +19,7 @@ const NavBar = () => {
             setScreen(window.innerWidth);
         }
         const changeColor = () => {
-            if (window.scrollY > 400) setAnimate(true);
+            if (window.scrollY > 200) setAnimate(true);
             else setAnimate(false);
         };
         window.addEventListener("scroll", changeColor);
@@ -38,34 +39,34 @@ const NavBar = () => {
                 <ul className={"navlink"} style={{ display: screen <= 800 ? state : "block" }}>
                     <li className="li_nav">
                         <Link className={"link"} href={"/"}>
-                            Home
-                        </Link>
-                    </li>
-                    <li className="li_nav">
-                        <Link className={"link"} href={"/AboutUs"}>
-                            About Us
+                            HOME
                         </Link>
                     </li>
                     <li className="li_nav">
                         <Link className={"link"} href={"/Members"}>
-                            Members
-                        </Link>
-                    </li>
-                    <li className="li_nav">
-                        <Link className={"link"} href={"/Events"}>
-                            Events
+                            TEAM
                         </Link>
                     </li>
                     <li className="li_nav">
                         <Link className={"link"} href={"/UnderConstruction"}>
-                            Resources
+                            COURSE
+                        </Link>
+                    </li>
+                    <li className="li_nav">
+                        <Link className={"link"} href={"/Events"}>
+                            NEWSLETTER
+                        </Link>
+                    </li>
+                    <li className="li_nav">
+                        <Link className={"link"} href={"/UnderConstruction"}>
+                            CONTACT
                         </Link>
                     </li>
                 </ul>
             </div>
             <div className={"linkbtn"}>
                 <button onClick={changeState} style={{ background: "none", border: "none" }}>
-                    <Image className={"mobbtn"} src={state == "block" ? arrow : bar} alt={"f"} />
+                    <Image className={"mobbtn"} src={state == "block" ? arrow : menu} alt={"f"} />
                 </button>
             </div>
         </div>

@@ -22,57 +22,49 @@ import Link from "next/link";
 import lights from "../assests/Lights.png";
 import side1 from "../assests/Untitled-8 1.png";
 import side2 from "../assests/Untitled-8 2.png";
+import star from '../assests/aboutUsStar.png';
 const AboutUs: NextPage = () => {
-    const details = data[0].eventnames;
-    const subscribers = Youtube();
+    // const details = data[0].eventnames;
+    // const subscribers = Youtube();
     return (
         <div className={styles.abtpagecontainer}>
-        <div className={styles.abtheader} >
+        {/* <div className={styles.abtheader} >
         <div>
             <NavBar/>
         </div>
             <div className={styles.abtheadertxt}>
         <p>Who Are We?</p>
             </div>
-        </div>
-            <div className={styles.abtsubdiv1}>
+        </div> */}
+            {/* <div className={styles.abtsubdiv1}>
                 <Image className={styles.conesimg} src={image2} alt={""} />
                 <div className={styles.abtsubdiv1header}>
                     <p>Our Followers Count</p>
                 </div>
                 <Image className={styles.guyimg} src={image1} alt={""} />
-            </div>
-                <div className={styles.ssmdiv}>
+            </div> */}
+                {/* <div className={styles.ssmdiv}>
                     <SocialMediaCount count = {subscribers} type = "Subscribers" image = {imagey}/>
                     <SocialMediaCount count = "600" type = "Followers" image = {imagei}/>
                     <SocialMediaCount count = "550" type = "Members" image = {imaged}/>
 
-                </div>
+                </div> */}
+                <Image src={star} alt="star-image" className={styles.starImage}/>
             <div className={styles.aboutus}>
                     <div className={styles.flexbox1}>
                     <div>
                     <p className={styles.abtheading}>About Us</p>
                     </div>
-                        <p className={styles.abtcontent}>
-                            CODEX is one of the most active clubs on campus and beyond and always
-                            operates, keeping the needs of the student community in mind.
-                            What`&apos;`s more, it never rests, ensuring you always have another
-                            event to attend, another skill to develop, and another way to have a
-                            great time! There are two sides to all engineering people. On one day,
-                            we may want to spend all night coding, and on another, we may get the
-                            urge to spend the night playing counter strike! Both these sides need to
-                            be catered to. And CODEX club is the organization that does it!!! CODEX
-                            club is an all-purpose organization that takes care of all your
-                            computing needs. It conducts a host of technical events like workshops
-                            and hackathons covering everything you could imagine, from web
-                            development to cloud computing.
-                        </p>
-                        <Link href={"/Events"}><button className={styles.wanttojoin}>Our Events</button></Link>
+                        <b className={styles.abtcontent}>
+                        CODEX is a dynamic club catering to all your computing needs. From technical workshops to fun events like hackathons and gaming nights, we've got you covered. Join us for an endless array of opportunities to learn, develop skills, and have a great time!
+                        </b><br />
+                        <Link href={"/UnderConstruction"}><button className={styles.wanttojoin}>MEET THE TEAM</button></Link>
                     </div>
                     <div>
-                        <Image className={styles.abtmem} src={abtmem} alt={""} />
+                        <Image className={styles.abtmem} src={abtmem} style={{marginBlock:"10px"}} alt={""} />
                     </div>
             </div>
+                    
             {/* <div className={styles.events}>
                 <div className={styles.eventheader}>
                     <p>Our Events</p>
@@ -105,7 +97,7 @@ const AboutUs: NextPage = () => {
                 </Link>
                 <Image className={styles.light} alt={""} src={lights}></Image>
             </div> */}
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };

@@ -1,10 +1,18 @@
-import logo from "../assests/codexlogo.png";
+import logo from "../assests/Logo.png";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import git from "../assests/github1.png";
 import disc from "../assests/discordlogo.png";
-import insta from "../assests/instagram.png";
+// import insta from "../assests/instagram.png";
 import utube from "../assests/youtube1.png";
+import insta from '../assests/instagramIcon.png';
+import linkedIn from '../assests/linkedInIcon.png';
+import twitter from '../assests/twitterIcon.png';
+import whatsApp from '../assests/whatsappIcon.png';
+import youtube from '../assests/youtubeIcon.png';
+import spotify from '../assests/spotifyIcon.png';
+import leftLines from '../assests/leftLinesStroke.png';
+import rightLines from '../assests/rightLineStroke.png';
 import Link from "next/link";
 export default function Footer() {
     const goToTop = () => {
@@ -17,7 +25,7 @@ export default function Footer() {
     return (
         <div>
             <footer>
-                <div className="content">
+                {/* <div className="content">
                     <div className="left box">
                         <div className="logo">
                             <Image src={logo} alt="logo" />
@@ -77,16 +85,57 @@ export default function Footer() {
                             </a>
                         </div>
                     </div>
+                </div> */}
+
+                <div className="footerTopContainer">
+
+                    <div className="footer-top-left">
+                        <Image src={logo} alt="footer-logo" className="footer-logo"/>
+                        <p className="footer-content">
+                            <span className="lines-stroke-1"><Image src={leftLines} alt="left-lines-stroke"/></span>
+                            CODEX is a technical club at <br />
+                            GITAM University, Bengaluru 
+                            <span className="lines-stroke-2"><Image src={rightLines} alt="right-lines-stroke"/></span>
+                        </p>
+                    <div className={"socialLinks"}>
+                        <a href="#">
+                            <Image src={insta} alt="Instagram"/>
+                        </a>
+                        <a href="#">
+                            <Image src={twitter} alt="Twitter"/>
+                        </a>
+                        <a href="#">
+                            <Image src={linkedIn} alt="LinkedIn"/>
+                        </a>
+                        <a href="#">
+                            <Image src={whatsApp} alt="WhatsApp"/>
+                        </a>
+                        <a href="#">
+                            <Image src={youtube} alt="YouTube"/>
+                        </a>
+                        <a href="#">
+                            <Image src={spotify} alt="Spotify"/>
+                        </a>
+                    </div>
+                    </div>
+                    <div className="footer-top-right">
+                            <p>CODEX Club,</p>
+                            <p>GITAM University, Bengaluru campus</p>
+                            <p>Karnataka - 561203.</p>
+                            <p><a className="mail-to" href="mailto:codex@gitam.in">codex@gitam.in</a></p>
+                            <p>+91-12345 67890</p>
+                    </div>
                 </div>
-                <div className="footr">
+
+                {/* <div className="footr">
                     <div className="footr_1">
                         <div className="foot1">Terms& Conditions</div>
                         <div className="foot2" onClick={goToTop}>
                             Back to Top
                         </div>
                     </div>
-                    {/*<div className="foot3"><p>Copyright © 2023 <Link href="/LandingPage">CodeX</Link> All rights reserved</p></div>*/}
-                </div>
+                    <div className="foot3"><p>Copyright © 2023 <Link href="/LandingPage">CodeX</Link> All rights reserved</p></div>
+                </div> */}
             </footer>
         </div>
     );

@@ -223,12 +223,101 @@
 /* Footer */
 footer {
     width: 100%;
-    background: #083847;
+    /* background: #083847; */
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
+    /* padding: 10px; */
+    /* display: flex; */
+    position: relative;
+    /* border-top: 1px solid rgba(0, 0, 0, 0.253); */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.253);
 }
-footer .content {
+
+
+.socialLinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+
+.socialLinks a img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: all .5s;
+    border-radius: 50%;
+}
+
+.socialLinks a img:hover{
+    box-shadow: 0 0 15px rgba(253, 0, 0, 0.253);
+}
+
+.footer-logo{
+    position: absolute;
+    top: -7%;
+    left: 0;
+    /* align-self: flex-start; */
+    width: 100px;
+    height: 100px;
+}
+
+
+.footer-content{
+    position: relative;
+}
+
+.footer-content span{
+    position: absolute;
+}
+
+.lines-stroke-1{
+    left: -35%;
+    top: -50%;
+}
+.lines-stroke-2{
+    right: -33%;
+}
+.footer-top-left{
+    max-width: 400px;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-left: 100px;
+    gap: 20px;
+    float: left;
+}
+
+.footer-top-right{
+    /* background-color: blue; */
+    /* padding: 100px; */
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+    padding: 60px 60px 50px;
+}
+
+.footer-top-right p{
+    text-align: end;
+}
+
+.mail-to{
+    color: #000000;
+}
+/* footer .content {
     max-width: 1350px;
     margin: auto;
     padding: 30px;
@@ -313,7 +402,7 @@ footer a {
 }
 footer a:hover {
     color: #7fdbff;
-}
+} */
 .footr {
     width: 100%;
     background-color: #267d98;
@@ -485,6 +574,20 @@ footer a:hover {
     .logo p {
         font-size: 12px;
     }
+    .footer-content{
+        scale: .8;
+    }
+    .footer-logo{
+        top: -4%;
+    }
+
+    .footer-top-left{
+        padding-left: 0;
+    }
+    .footer-top-right{
+        padding-top: 20px;
+        padding-right: 20px;
+    }
 }
 
 /*Nav Bar css for responsiveness*/
@@ -508,10 +611,15 @@ footer a:hover {
     background-color: rgb(58, 136, 181);
     transition: background-color 1.5s ease;
 }
+
+.navactive .link{
+    color: #fff;
+}
 .logo_nav {
     width: 50px;
     height: 50px;
     margin: 0.5vw;
+    transform: scale(1.5);
 }
 .nav_box2 {
     display: flex;
@@ -521,12 +629,11 @@ footer a:hover {
 .link {
     margin: 15px;
     text-decoration: none;
-    color: white;
+    color: #000000;
 }
 .linkbtn {
     margin: 5vw;
     text-decoration: none;
-    color: white;
     font-family: Inter;
     display: none;
 }
@@ -541,11 +648,11 @@ footer a:hover {
     display: inline-block;
     line-height: 35px;
     font-size: 1vw;
-    transition: all 0.3s linear 0s;
+    transition: all 0.2s linear 0s;
 }
 .li_nav:hover {
     padding-bottom: 5px;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #000000;
 }
 @media screen and (max-width: 1200px) {
     .li_nav {
@@ -649,8 +756,8 @@ footer a:hover {
     font-size: 10px !important;
     margin-top: 10px;
 }
-.slick-dots button {
-}
+/* .slick-dots button {
+} */
 
 .slick-dots li.slick-active button:before {
     color: rgb(0, 0, 0) !important;

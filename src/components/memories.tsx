@@ -2,6 +2,7 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import styles from "../styles/memories.module.css";
+import border from '../assests/Border.png';
 import img1 from "../assests/mem_img1.png";
 import img2 from "../assests/memories/mem1.png";
 import img3 from "../assests/memories/mem2.png";
@@ -31,7 +32,7 @@ const Memories = () => {
     const responsive = {
         0: { items: 1 },
         568: { items: 2 },
-        1200: { items: 3 },
+        1200: { items: 3 ,},
     };
     const items = [
         <Image
@@ -167,7 +168,7 @@ const Memories = () => {
         <div className={styles.maincontainer_mem}>
             <div className={styles.head_mem}>
                 <h1>
-                    Our <span>Memories</span>
+                    EVENTS WE HELD
                 </h1>
             </div>
             <AliceCarousel
@@ -180,8 +181,19 @@ const Memories = () => {
                 items={items}
                 responsive={responsive}
                 controlsStrategy={styles.alternate}
+                disableDotsControls={false}
             />
+            <div className={styles.borderOuter}>
+                <div className={styles.border_1}></div>
+                <div className={styles.border_2}></div>
+                <div className={styles.border_3}></div>
+                <div className={styles.border_4}></div>
+                <div className={styles.border_5}></div>
+            </div>
         </div>
     );
 };
 export default dynamic(() => Promise.resolve(Memories), { ssr: false });
+
+
+
